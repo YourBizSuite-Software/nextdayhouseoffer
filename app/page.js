@@ -127,9 +127,11 @@ export default function Home() {
               <video
                 src="/NextDayHouseOffer.mp4"
                 controls
-                loop
                 playsInline
-                className="w-full h-48 object-cover"
+                preload="metadata"
+                poster="/thumbnail.jpg"             // <- shows immediately on load
+                className="w-full rounded-lg"
+                style={{ aspectRatio: '16 / 9', objectFit: 'cover' }}
                 aria-label="Next Day House Offer walkthrough video"
               />
             </div>
