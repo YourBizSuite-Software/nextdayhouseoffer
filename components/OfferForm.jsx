@@ -68,7 +68,7 @@ export default function OfferForm() {
     <form
       ref={formRef}
       onSubmit={handleSubmit}
-      className="mt-4 rounded-xl border border-slate-200 bg-white p-5"
+      className="mt-4 rounded-xl border border-slate-200 bg-white p-5 text-slate-800"
     >
       {/* Honeypot */}
       <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />

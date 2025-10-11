@@ -146,15 +146,15 @@ export default function Home() {
         <section className="py-10">
           <div className="mx-auto max-w-6xl px-4 grid gap-4 md:grid-cols-3">
             <div className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold">No Repairs Needed</h3>
+              <h3 className="font-semibold text-slate-800">No Repairs Needed</h3>
               <p className="mt-1 text-slate-600">We buy houses <em>as-is</em>. Skip cleaning, repairs, and showings.</p>
             </div>
             <div className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold">Fast & Local</h3>
+              <h3 className="font-semibold text-slate-800">Fast & Local</h3>
               <p className="mt-1 text-slate-600">Major metros across Ohio & Texas. Offers in 24 hours, close in days.</p>
             </div>
             <div className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold">No Fees or Commissions</h3>
+              <h3 className="font-semibold text-slate-800">No Fees or Commissions</h3>
               <p className="mt-1 text-slate-600">Keep more cash. We cover closing costs and there are no agent fees.</p>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function Home() {
         {/* REVIEWS */}
         <section className="py-10 bg-slate-50">
           <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-2xl font-semibold">Customer Reviews</h2>
+            <h2 className="text-2xl font-semibold text-slate-800">Customer Reviews</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               <div className="rounded-xl bg-white p-5 border border-slate-200">
                 <p className="text-amber-500" aria-label="5 stars">★★★★★</p>
@@ -209,12 +209,12 @@ export default function Home() {
             </div>
 
             <aside className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold">Ohio Sellers</h3>
+              <h3 className="font-semibold text-slate-800">Ohio Sellers</h3>
               <p className="mt-1 text-slate-600">
                 Looking to <strong>sell your house fast in Ohio</strong>? We buy as-is in Columbus, Cleveland, Cincinnati, Dayton, Toledo and more.
               </p>
 
-              <h3 className="mt-4 font-semibold">Texas Sellers</h3>
+              <h3 className="mt-4 font-semibold text-slate-800">Texas Sellers</h3>
               <p className="mt-1 text-slate-600">
                 Need a <strong>cash home buyer in Texas</strong>? Get a competitive offer in Houston, Dallas, Austin, San Antonio and surrounding areas.
               </p>
