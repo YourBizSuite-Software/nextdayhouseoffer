@@ -229,7 +229,6 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex items-center justify-between">
           <div>© {year} Next Day House Offer</div>
           <a className="justify-center" href="https://yourbizsuite.com">YourBizSuite Software</a>
-          <a className="underline" href="#offer-form">Get Offer</a>
         </div>
       </footer>
     </>
