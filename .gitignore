@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ignore screen recordings
+*.mov
+*.MOV
+
+# ignore screen recordings
+*.mov
+*.MOV
