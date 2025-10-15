@@ -1,236 +1,198 @@
 import Script from 'next/script';
 import OfferForm from '../components/OfferForm';
+import HeroAddressCard from '../components/HeroAddressCard'; // <-- add this
 
 export default function Home() {
   const year = new Date().getFullYear();
 
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Next Day House Offer",
-    url: "https://nextdayhouseoffer.net",
-    telephone: "+1-888-646-3983",
-    email: "team@nextdayhouseoffer.net",
-    logo: "https://nextdayhouseoffer.net/next-logo.png",
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Next Day House Offer',
+    url: 'https://nextdayhouseoffer.net',
+    telephone: '+1-888-646-3983',
+    email: 'team@nextdayhouseoffer.net',
+    logo: 'https://nextdayhouseoffer.net/next-logo.png',
     description:
-      "We buy houses as-is and give next-day cash offers in all major cities across Ohio and Texas. No repairs, no commissions, and flexible closing dates.",
+      'We buy houses as-is and give next-day cash offers in all major cities across Ohio and Texas. No repairs, no commissions, and flexible closing dates.',
     areaServed: [
-      { "@type": "City", name: "Columbus" },
-      { "@type": "City", name: "Dayton" },
-      { "@type": "City", name: "Toledo" },
-      { "@type": "City", name: "Cleveland" },
-      { "@type": "City", name: "Cincinnati" },
-      { "@type": "City", name: "Houston" },
-      { "@type": "City", name: "Dallas" },
-      { "@type": "City", name: "Austin" },
-      { "@type": "City", name: "San Antonio" }
+      { '@type': 'City', name: 'Columbus' },
+      { '@type': 'City', name: 'Dayton' },
+      { '@type': 'City', name: 'Toledo' },
+      { '@type': 'City', name: 'Cleveland' },
+      { '@type': 'City', name: 'Cincinnati' },
+      { '@type': 'City', name: 'Houston' },
+      { '@type': 'City', name: 'Dallas' },
+      { '@type': 'City', name: 'Austin' },
+      { '@type': 'City', name: 'San Antonio' },
     ],
-    address: [
-      { "@type": "PostalAddress", addressLocality: "Columbus", addressRegion: "OH" },
-      { "@type": "PostalAddress", addressLocality: "Dayton", addressRegion: "OH" },
-      { "@type": "PostalAddress", addressLocality: "Toledo", addressRegion: "OH" },
-      { "@type": "PostalAddress", addressLocality: "Cleveland", addressRegion: "OH" },
-      { "@type": "PostalAddress", addressLocality: "Cincinnati", addressRegion: "OH" },
-      { "@type": "PostalAddress", addressLocality: "Houston", addressRegion: "TX" },
-      { "@type": "PostalAddress", addressLocality: "Dallas", addressRegion: "TX" },
-      { "@type": "PostalAddress", addressLocality: "Austin", addressRegion: "TX" },
-      { "@type": "PostalAddress", addressLocality: "San Antonio", addressRegion: "TX" }
-    ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "127"
-    },
-    review: [
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Michelle R." },
-        reviewBody: "Got a fair offer the next day and closed in under two weeks. Super easy."
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Carlos M." },
-        reviewBody: "Sold as-is with tenants in place. Communication was great throughout."
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Emily T." },
-        reviewBody: "No fees and they covered closing costs. Highly recommend."
-      }
-    ]
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '127' },
   };
 
   return (
     <>
       <Script id="jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* HEADER */}
-      <header className="bg-gradient-to-b from-slate-900 to-slate-800 text-white text-center">
-        <div className="mx-auto max-w-6xl px-4 py-8 flex flex-col items-center justify-center">
-          <img src="/next-logo2.png" alt="Next Day House Offer" className="h-40 w-auto mb-3" />
-          <p className="text-lg font-semibold tracking-wide">
-            Toll-Free:{' '}
-            <a href="tel:8886463983" className="text-amber-400 hover:underline">
-              888-64-NEXTDAY (888-646-3983)
-            </a>
-          </p>
-        </div>
-
-        <div className="mx-auto max-w-6xl px-4 py-16 grid gap-8 md:grid-cols-2">
-          <div>
-            <span className="inline-block rounded-full bg-amber-500/20 text-amber-400 px-3 py-1 text-sm font-bold">
-              Cash Offer as Soon as Tomorrow
-            </span>
-            <h1 className="mt-4 text-3xl md:text-5xl font-bold">We Buy Houses in Any Condition</h1>
-            <p className="mt-3 text-slate-200">
-              Serving <strong>Ohio</strong> and <strong>Texas</strong> major cities — no repairs, no commissions, and your timeline.
-            </p>
-            <a href="#offer-form" className="inline-block mt-5 rounded-lg bg-amber-400 px-5 py-3 font-semibold text-slate-900">
-              Get My Free Cash Offer
-            </a>
-            <div className="mt-3 flex flex-wrap gap-2 justify-center md:justify-start">
-              <span className="rounded-full bg-white/10 px-3 py-1">Columbus, OH</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">Dayton, OH</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">Cleveland, OH</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">Toledo, OH</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">Cincinnati, OH</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">Houston, TX</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">Dallas, TX</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">Austin, TX</span>
-              <span className="rounded-full bg-white/10 px-3 py-1">San Antonio, TX</span>
-            </div>
+      {/* TOP BAR */}
+      <header className="bg-white shadow-sm">
+        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <img src="/next-logo.png" alt="Next Day House Offer" className="h-20 w-auto" />
+            <span className="sr-only">Next Day House Offer</span>
           </div>
+          <a
+            href="tel:8886463983"
+            className="inline-flex items-center gap-2 rounded-full bg-red-600 px-4 py-2 text-white font-semibold shadow hover:bg-red-700"
+            aria-label="Call 888-646-3983"
+          >
+            <span>Call</span>
+            <span className="hidden sm:inline">888-646-3983</span>
+          </a>
+        </div>
+      </header>
 
-          <div className="rounded-xl bg-white/5 p-5">
-            <h2 className="text-xl font-semibold">How It Works</h2>
+      {/* HERO */}
+      <section className="bg-gradient-to-b from-slate-50 to-white">
+        <div className="mx-auto max-w-6xl px-4 py-8">
+          <div className="grid gap-8 md:grid-cols-2 items-center">
+            <div>
+              <p className="text-teal-700 font-semibold uppercase tracking-wide">We will buy your house fast, at any condition!</p>
+              <h1 className="mt-2 text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                We buy houses quick, no repairs, best offers.
+              </h1>
+              <p className="mt-3 text-slate-700">
+                Get a fair cash offer in <strong>24 hours</strong>. No repairs, no showings, and you pick the closing date.
+              </p>
 
-            <ol className="mt-3 space-y-2 list-decimal list-inside text-slate-200">
-              <li>
-                <strong>Fill the form</strong> — make sure to include the <strong>property address</strong> and your <strong>contact info</strong>.
-              </li>
-              <li>
-                <strong>We contact you ASAP</strong> — one of our representatives will reach out to confirm details.
-              </li>
-              <li>
-                <strong>Quick visit</strong> — we do a short walkthrough to check the property.
-              </li>
-              <li>
-                <strong>Get your offer</strong> — receive a fair cash offer, often by the <em>next day</em>.
-              </li>
-            </ol>
+              {/* Address card (CTA) – now a client component */}
+              <HeroAddressCard />
+            </div>
 
-            {/* Playable video with controls and sound */}
-            <div className="mt-4 rounded-lg overflow-hidden">
+            {/* Video / visual */}
+            <div className="rounded-2xl overflow-hidden shadow">
               <video
                 src="/NextDayHouseOffer.mp4"
                 controls
                 playsInline
                 preload="metadata"
-                poster="/thumbnail.jpg"             // <- shows immediately on load
-                className="w-full rounded-lg"
-                style={{ aspectRatio: '16 / 9', objectFit: 'cover' }}
-                aria-label="Next Day House Offer walkthrough video"
+                poster="/thumbnail.jpg"
+                className="w-full h-64 md:h-[360px] object-cover"
+                aria-label="How selling to us works"
               />
             </div>
-
-            <p className="mt-2 text-sm text-slate-300">
-              We handle all paperwork. You pay no agent fees or closing costs.
-            </p>
           </div>
         </div>
-      </header>
+      </section>
 
-      <main>
-        {/* VALUE PROPS */}
-        <section className="py-10">
-          <div className="mx-auto max-w-6xl px-4 grid gap-4 md:grid-cols-3">
-            <div className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold text-slate-800">No Repairs Needed</h3>
-              <p className="mt-1 text-slate-600">We buy houses <em>as-is</em>. Skip cleaning, repairs, and showings.</p>
-            </div>
-            <div className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold text-slate-800">Fast & Local</h3>
-              <p className="mt-1 text-slate-600">Major metros across Ohio & Texas. Offers in 24 hours, close in days.</p>
-            </div>
-            <div className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold text-slate-800">No Fees or Commissions</h3>
-              <p className="mt-1 text-slate-600">Keep more cash. We cover closing costs and there are no agent fees.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* GALLERY (renamed) */}
-        <section className="py-4">
-          <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-2xl font-semibold">Recent Purchases Gallery</h2>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
-              <img className="h-56 w-full rounded-lg object-cover" src="/recent1.JPG" alt="Recently purchased property 1" />
-              <img className="h-56 w-full rounded-lg object-cover" src="/recent2.JPG" alt="Recently purchased property 2" />
-              <img className="h-56 w-full rounded-lg object-cover" src="/recent3.JPG" alt="Recently purchased property 3" />
-              <img className="h-56 w-full rounded-lg object-cover md:col-span-3" src="/recent4.JPG" alt="Recently purchased property 4" />
-            </div>
-          </div>
-        </section>
-
-        {/* REVIEWS */}
-        <section className="py-10 bg-slate-50">
-          <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-2xl font-semibold text-slate-800">Customer Reviews</h2>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
-              <div className="rounded-xl bg-white p-5 border border-slate-200">
-                <p className="text-amber-500" aria-label="5 stars">★★★★★</p>
-                <p className="mt-2 text-slate-700">“Got a fair offer the next day and closed in under two weeks. Super easy.”</p>
-                <p className="mt-3 text-sm text-slate-500">— Michelle R., Columbus, OH</p>
-              </div>
-              <div className="rounded-xl bg-white p-5 border border-slate-200">
-                <p className="text-amber-500" aria-label="5 stars">★★★★★</p>
-                <p className="mt-2 text-slate-700">“Sold as-is with tenants in place. Communication was great throughout.”</p>
-                <p className="mt-3 text-sm text-slate-500">— Carlos M., Houston, TX</p>
-              </div>
-              <div className="rounded-xl bg-white p-5 border border-slate-200">
-                <p className="text-amber-500" aria-label="5 stars">★★★★★</p>
-                <p className="mt-2 text-slate-700">“No fees and they covered closing costs. Highly recommend.”</p>
-                <p className="mt-3 text-sm text-slate-500">— Emily T., Dayton, OH</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FORM + SIDEBAR (updated headings) */}
-        <section id="offer-form" className="py-10">
-          <div className="mx-auto max-w-6xl px-4 grid gap-8 md:grid-cols-2">
-            <div>
-              <h2 className="text-2xl font-semibold">Get Your Free Cash Offer</h2>
-              <p className="mt-2 text-slate-600">
-                Fill out this quick form and we’ll send a fair offer as soon as <strong>next day</strong>. No obligation.
-              </p>
-              <OfferForm />
-            </div>
-
-            <aside className="rounded-xl bg-slate-50 p-5">
-              <h3 className="font-semibold text-slate-800">Ohio Sellers</h3>
+      {/* 3-STEP PROCESS */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900">Our 3-step selling process</h2>
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <div className="text-3xl font-black text-teal-700">1.</div>
+              <h3 className="mt-1 font-semibold text-slate-900">Free Consultation</h3>
               <p className="mt-1 text-slate-600">
-                Looking to <strong>sell your house fast in Ohio</strong>? We buy as-is in Columbus, Cleveland, Cincinnati, Dayton, Toledo and more.
+                Fill the form with your <strong>property address</strong> and contact info. We’ll reach out ASAP to confirm details.
               </p>
-
-              <h3 className="mt-4 font-semibold text-slate-800">Texas Sellers</h3>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <div className="text-3xl font-black text-teal-700">2.</div>
+              <h3 className="mt-1 font-semibold text-slate-900">Fast Offer</h3>
               <p className="mt-1 text-slate-600">
-                Need a <strong>cash home buyer in Texas</strong>? Get a competitive offer in Houston, Dallas, Austin, San Antonio and surrounding areas.
+                We’ll do a quick visit, review the property condition, and send a fair cash offer—often by the <em>next day</em>.
               </p>
-
-              <p className="mt-2 text-xs text-slate-500">We also consider nearby suburbs and surrounding counties.</p>
-            </aside>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <div className="text-3xl font-black text-teal-700">3.</div>
+              <h3 className="mt-1 font-semibold text-slate-900">Easy Closing</h3>
+              <p className="mt-1 text-slate-600">Choose your closing date. <strong>No fees</strong>, we cover typical closing costs.</p>
+            </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <footer className="bg-slate-900 text-slate-300">
+      {/* VALUE PROPS */}
+      <section className="bg-teal-700">
+        <div className="mx-auto max-w-6xl px-4 py-10 text-white">
+          <h2 className="text-2xl md:text-3xl font-extrabold">Why sell to us?</h2>
+          <ul className="mt-4 grid gap-3 md:grid-cols-2">
+            <li className="rounded-lg bg-white/10 p-3">No repairs needed</li>
+            <li className="rounded-lg bg-white/10 p-3">No showings or open houses</li>
+            <li className="rounded-lg bg-white/10 p-3">We pay typical closing costs</li>
+            <li className="rounded-lg bg-white/10 p-3">Cash offers — no banks</li>
+          </ul>
+          <a href="#offer-form" className="mt-6 inline-block rounded-lg bg-yellow-400 px-6 py-3 font-extrabold text-slate-900 shadow hover:bg-yellow-300">
+            GET OFFER NOW
+          </a>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          <h2 className="text-2xl font-extrabold text-slate-900">Recent Purchases</h2>
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
+            <img className="h-56 w-full rounded-lg object-cover" src="/recent1.JPG" alt="Recently purchased property 1" />
+            <img className="h-56 w-full rounded-lg object-cover" src="/recent2.JPG" alt="Recently purchased property 2" />
+            <img className="h-56 w-full rounded-lg object-cover" src="/recent3.JPG" alt="Recently purchased property 3" />
+            <img className="h-56 w-full rounded-lg object-cover md:col-span-3" src="/recent4.JPG" alt="Recently purchased property 4" />
+          </div>
+        </div>
+      </section>
+
+      {/* REVIEWS */}
+      <section className="bg-slate-50">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          <h2 className="text-2xl font-extrabold text-slate-900">Verified Seller Testimonials</h2>
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl bg-white p-5 border border-slate-200">
+              <p className="text-yellow-400" aria-label="5 stars">★★★★★</p>
+              <p className="mt-2 text-slate-700">“Got a fair offer the next day and closed in under two weeks. Super easy.”</p>
+              <p className="mt-3 text-sm text-slate-500">— Michelle R., Columbus, OH</p>
+            </div>
+            <div className="rounded-xl bg-white p-5 border border-slate-200">
+              <p className="text-yellow-400" aria-label="5 stars">★★★★★</p>
+              <p className="mt-2 text-slate-700">“Sold as-is with tenants in place. Communication was great throughout.”</p>
+              <p className="mt-3 text-sm text-slate-500">— Carlos M., Houston, TX</p>
+            </div>
+            <div className="rounded-xl bg-white p-5 border border-slate-200">
+              <p className="text-yellow-400" aria-label="5 stars">★★★★★</p>
+              <p className="mt-2 text-slate-700">“No fees and they covered closing costs. Highly recommend.”</p>
+              <p className="mt-3 text-sm text-slate-500">— Emily T., Dayton, OH</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FORM + SIDEBAR */}
+      <section id="offer-form" className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12 grid gap-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900">Get Your Free Cash Offer</h2>
+            <p className="mt-2 text-slate-600">
+              Fill out this quick form and we’ll send a fair offer as soon as <strong>next day</strong>. No obligation.
+            </p>
+            <OfferForm />
+          </div>
+          <aside className="rounded-xl border border-slate-200 bg-slate-50 p-5">
+            <h3 className="font-extrabold text-slate-900">Where we buy</h3>
+            <p className="mt-1 text-slate-700">Ohio: Columbus, Cleveland, Cincinnati, Dayton, Toledo & more.</p>
+            <p className="mt-1 text-slate-700">Texas: Houston, Dallas, Austin, San Antonio & surrounding areas.</p>
+            <ul className="mt-4 list-disc pl-5 text-slate-700">
+              <li>No repairs</li>
+              <li>No commissions</li>
+              <li>We cover typical closing costs</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-teal-800 text-white">
         <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex items-center justify-between">
           <div>© {year} Next Day House Offer</div>
-          <a className="justify-center" href="https://yourbizsuite.com">YourBizSuite Software</a>
+          <a className="underline" href="tel:8886463983">888-646-3983</a>
         </div>
       </footer>
     </>
