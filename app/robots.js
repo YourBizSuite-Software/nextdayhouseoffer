@@ -1,6 +1,8 @@
+// app/robots.js
 export default function robots() {
+  const base = 'https://nextdayhouseoffer.net';
   return {
-    rules: [{ userAgent: '*', allow: '/' }],
-    sitemap: 'https://nextdayhouseoffer.net/sitemap.xml',
+    rules: { userAgent: '*', allow: '/' },
+    sitemap: `${base}/sitemap.xml`,
   };
 }
