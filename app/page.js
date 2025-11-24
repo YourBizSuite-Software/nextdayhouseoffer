@@ -12,12 +12,10 @@ export default function Home() {
     url: 'https://nextdayhouseoffer.net',
     telephone: '+1-888-646-3983',
     email: 'team@nextdayhouseoffer.net',
-    logo: 'https://nextdayhouseoffer.net/next-logo.png',
+    logo: 'https://nextdayhouseoffer.net/nextday-logo3.png',
     description:
       'Next Day House Offer buys houses as-is for cash in markets across the United States. Sell your house fast with no repairs, no commissions, and flexible closing dates.',
-    areaServed: [
-      { '@type': 'Country', name: 'United States' }
-    ],
+    areaServed: [{ '@type': 'Country', name: 'United States' }],
     aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '127' },
   };
 
@@ -29,23 +27,33 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* TOP BAR */}
-      <header className="bg-white border-b border-slate-200">
-        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src="/next-logo.png" alt="Next Day House Offer" className="h-20 w-auto" />
-            <span className="text-xl font-bold text-slate-900">
-              Next Day House Offer
+      {/* TOP BAR – dark, simple, centered like sellmyhousefast.com */}
+      <header className="bg-[#1f2c3f] text-white shadow-md">
+        <div className="mx-auto max-w-6xl px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex flex-col items-center sm:items-start gap-1">
+            <img
+              src="/nextday-logo3.png" // change extension if needed
+              alt="Next Day House Offer"
+              className="h-16 w-auto md:h-20"
+            />
+            <span className="text-sm tracking-[0.18em] font-semibold uppercase text-slate-100">
+              We Buy Your House Fast
             </span>
           </div>
-          <a
-            href="tel:8886463983"
-            className="inline-flex items-center gap-2 rounded-full bg-teal-600 px-4 py-2 text-white font-semibold shadow hover:bg-teal-700 transition"
-            aria-label="Call 888-646-3983"
-          >
-            <span>Call</span>
-            <span className="hidden sm:inline">888-646-3983</span>
-          </a>
+
+          <div className="flex flex-col items-center sm:items-end gap-1">
+            <span className="text-xs uppercase tracking-wide text-slate-200">
+              Speak with a home buying specialist
+            </span>
+            <a
+              href="tel:8886463983"
+              className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-5 py-2 text-sm font-semibold text-slate-900 shadow hover:bg-amber-400 transition"
+              aria-label="Call 888-646-3983"
+            >
+              <span>Call Now</span>
+              <span className="font-bold">888-646-3983</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -54,8 +62,8 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-10">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div>
-              <p className="text-teal-700 font-semibold uppercase tracking-wide">
-                We will buy your house fast, at any condition
+              <p className="text-amber-600 font-semibold uppercase tracking-wide">
+                We will buy your house fast, in any condition
               </p>
               <h1 className="mt-2 text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
                 Sell your house fast for cash — no repairs, no fees, no hassle.
