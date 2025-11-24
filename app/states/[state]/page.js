@@ -8,11 +8,6 @@ const STATE_CONFIG = {
     stateSlug: "alabama",
     cities: ["Birmingham", "Montgomery", "Mobile", "Huntsville", "Tuscaloosa"],
   },
-  alaska: {
-    stateName: "Alaska",
-    stateSlug: "alaska",
-    cities: ["Anchorage", "Fairbanks", "Juneau", "Wasilla", "Kenai"],
-  },
   arizona: {
     stateName: "Arizona",
     stateSlug: "arizona",
@@ -54,11 +49,6 @@ const STATE_CONFIG = {
     stateName: "Georgia",
     stateSlug: "georgia",
     cities: ["Atlanta", "Savannah", "Augusta", "Columbus", "Macon"],
-  },
-  hawaii: {
-    stateName: "Hawaii",
-    stateSlug: "hawaii",
-    cities: ["Honolulu", "Hilo", "Kailua", "Pearl City", "Waipahu"],
   },
   idaho: {
     stateName: "Idaho",

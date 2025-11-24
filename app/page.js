@@ -34,7 +34,9 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/next-logo.png" alt="Next Day House Offer" className="h-20 w-auto" />
-            <span className="sr-only">Next Day House Offer</span>
+            <span className="text-xl font-bold text-slate-900">
+              Next Day House Offer
+            </span>
           </div>
           <a
             href="tel:8886463983"
@@ -295,9 +297,9 @@ export default function Home() {
             <div>Nebraska</div>
             <div>Nevada</div>
             <div>New Hampshire</div>
-            
+
             <div>New Mexico</div>
-            
+
             <div>North Carolina</div>
             <div>North Dakota</div>
             <div>Ohio</div>
@@ -423,11 +425,42 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="bg-slate-900 text-white">
-        <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div>© {year} Next Day House Offer. All rights reserved.</div>
-          <a className="underline decoration-white/70 hover:decoration-white" href="tel:8886463983">
-            888-646-3983
-          </a>
+        <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+            <span>© {year} Next Day House Offer. All rights reserved.</span>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="/terms"
+              className="underline decoration-white/60 hover:decoration-white"
+            >
+              Terms &amp; Conditions
+            </a>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="/privacy"
+              className="underline decoration-white/60 hover:decoration-white"
+            >
+              Privacy Policy
+            </a>
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-center sm:text-right">
+            <a
+              className="underline decoration-white/70 hover:decoration-white"
+              href="tel:8886463983"
+            >
+              888-646-3983
+            </a>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="https://yourbizsuite.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-emerald-400/70 hover:decoration-emerald-300"
+            >
+              Developed by YourBizSuite Software
+            </a>
+          </div>
         </div>
       </footer>
     </>
