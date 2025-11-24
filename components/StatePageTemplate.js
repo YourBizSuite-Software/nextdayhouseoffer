@@ -60,6 +60,24 @@ export default function StatePageTemplate({ stateName, stateSlug, cities }) {
         </div>
       </header>
 
+
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-5xl px-6 space-y-4">
+          <h1 className="text-3xl font-bold text-slate-900">
+            Sell Your House Fast in {stateName}
+          </h1>
+          <p className="text-sm text-slate-700 leading-relaxed">
+            If you’re searching for phrases like{" "}
+            <strong>“sell my house fast in {stateName}”</strong>,{" "}
+            <strong>“cash home buyers in {stateName}”</strong>, or{" "}
+            <strong>“we buy houses in {stateName}”</strong>, you’re in the right place.
+            We help homeowners get fair cash offers in cities such as{" "}
+            {cities.join(", ")} and surrounding areas. Our process is built for sellers
+            who need a quick house cash offer without repairs, fees, or long wait times.
+          </p>
+        </div>
+      </section>
+
       {/* HERO */}
       <section className="bg-gradient-to-b from-slate-50 to-white">
         <div className="mx-auto max-w-6xl px-4 py-10">
@@ -158,16 +176,81 @@ export default function StatePageTemplate({ stateName, stateSlug, cities }) {
         </div>
       </section>
 
+      <section className="bg-slate-50 py-12">
+  <div className="mx-auto max-w-6xl px-6">
+    <h2 className="text-2xl font-bold text-slate-900 mb-6">
+      Frequently Asked Questions About Selling Your House Fast
+    </h2>
+    <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
+      <div>
+        <h3 className="font-semibold">
+          How does your “sell my house fast for cash” process work?
+        </h3>
+        <p>
+          We review your property, make a fair cash offer, and if you accept we
+          close on your schedule with no repairs or agent commissions.
+        </p>
+      </div>
+      <div>
+        <h3 className="font-semibold">
+          Do you buy houses in any condition, even if I need to sell my house as-is?
+        </h3>
+        <p>
+          Yes. We make house cash offers on properties that are outdated, damaged,
+          inherited, or have problem tenants.
+        </p>
+      </div>
+      <div>
+        <h3 className="font-semibold">
+          Can I get a fast house cash offer if I’m behind on payments?
+        </h3>
+        <p>
+          Many sellers come to us when they’re behind on payments or facing
+          foreclosure. We work quickly to present options and a cash offer.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* FOOTER */}
       <footer className="bg-slate-900 text-white">
-        <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div>© {year} Next Day House Offer. All rights reserved.</div>
-          <a
-            className="underline decoration-white/70 hover:decoration-white"
-            href="tel:8886463983"
-          >
-            888-646-3983
-          </a>
+        <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+            <span>© {year} Next Day House Offer. All rights reserved.</span>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="/terms"
+              className="underline decoration-white/60 hover:decoration-white"
+            >
+              Terms &amp; Conditions
+            </a>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="/privacy"
+              className="underline decoration-white/60 hover:decoration-white"
+            >
+              Privacy Policy
+            </a>
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-center sm:text-right">
+            <a
+              className="underline decoration-white/70 hover:decoration-white"
+              href="tel:8886463983"
+            >
+              888-646-3983
+            </a>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="https://yourbizsuite.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-emerald-400/70 hover:decoration-emerald-300"
+            >
+              Developed by YourBizSuite Software
+            </a>
+          </div>
         </div>
       </footer>
     </>

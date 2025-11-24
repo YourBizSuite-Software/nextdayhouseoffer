@@ -138,6 +138,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-6xl px-6 space-y-4">
+          <h2 className="text-2xl font-bold text-slate-900">
+            Looking for the best way to sell your house fast?
+          </h2>
+          <p className="text-sm text-slate-700 leading-relaxed">
+            Homeowners search every day for phrases like{" "}
+            <strong>“sell my house fast”</strong>,{" "}
+            <strong>“sell your house fast for cash”</strong>,{" "}
+            <strong>“best house cash offers”</strong>,{" "}
+            <strong>“we buy houses for cash”</strong>,{" "}
+            <strong>“cash home buyers near me”</strong>, and{" "}
+            <strong>“sell my home as-is”</strong>. Next Day House Offer focuses on
+            helping sellers who need a quick, hassle-free sale. Whether you want to
+            avoid repairs, sell a rental property, stop a foreclosure, or simply get a
+            fast cash offer, our team works with homeowners who search for terms like{" "}
+            <strong>“sell my house quickly”</strong>,{" "}
+            <strong>“fast cash offer on my house”</strong>,{" "}
+            <strong>“investor who buys houses”</strong>,{" "}
+            <strong>“no-agent home sale”</strong>, and{" "}
+            <strong>“companies that buy houses for cash”</strong> in cities all across
+            the United States.
+          </p>
+        </div>
+      </section>
+
       {/* OUR STORY */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
@@ -422,6 +448,43 @@ export default function Home() {
           </aside>
         </div>
       </section>
+
+      <section className="bg-slate-50 py-12">
+  <div className="mx-auto max-w-6xl px-6">
+    <h2 className="text-2xl font-bold text-slate-900 mb-6">
+      Frequently Asked Questions About Selling Your House Fast
+    </h2>
+    <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
+      <div>
+        <h3 className="font-semibold">
+          How does your “sell my house fast for cash” process work?
+        </h3>
+        <p>
+          We review your property, make a fair cash offer, and if you accept we
+          close on your schedule with no repairs or agent commissions.
+        </p>
+      </div>
+      <div>
+        <h3 className="font-semibold">
+          Do you buy houses in any condition, even if I need to sell my house as-is?
+        </h3>
+        <p>
+          Yes. We make house cash offers on properties that are outdated, damaged,
+          inherited, or have problem tenants.
+        </p>
+      </div>
+      <div>
+        <h3 className="font-semibold">
+          Can I get a fast house cash offer if I’m behind on payments?
+        </h3>
+        <p>
+          Many sellers come to us when they’re behind on payments or facing
+          foreclosure. We work quickly to present options and a cash offer.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="bg-slate-900 text-white">
