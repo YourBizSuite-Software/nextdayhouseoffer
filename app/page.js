@@ -295,9 +295,9 @@ export default function Home() {
             <div>Nebraska</div>
             <div>Nevada</div>
             <div>New Hampshire</div>
-            <div>New Jersey</div>
+            
             <div>New Mexico</div>
-            <div>New York</div>
+            
             <div>North Carolina</div>
             <div>North Dakota</div>
             <div>Ohio</div>
@@ -356,9 +356,7 @@ export default function Home() {
 
           <p className="text-sm text-slate-700 leading-relaxed">
             <strong>East Coast & Northeast markets:</strong> We help homeowners sell houses fast
-            in New York City (including Brooklyn, Queens, the Bronx, and Staten Island), Long
-            Island, Buffalo, Rochester, Syracuse, Albany, Newark, Jersey City, Paterson, Trenton,
-            Philadelphia, Pittsburgh, Allentown, Scranton, Reading, Baltimore, Annapolis,
+            in Philadelphia, Pittsburgh, Allentown, Scranton, Reading, Baltimore, Annapolis,
             Washington D.C., Boston, Worcester, Springfield, Providence, Hartford, New Haven, and
             many surrounding coastal and inland communities. Whether you need a cash offer for a
             row house, a condo, or a single-family home, our buyers can help.
