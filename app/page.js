@@ -27,17 +27,17 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* TOP BAR – dark, simple, centered like sellmyhousefast.com */}
-      <header className="bg-[#1f2c3f] text-white shadow-md">
+      {/* TOP BAR – dark, simple, centered */}
+      <header className="bg-[#182e4e] text-white shadow-md">
         <div className="mx-auto max-w-6xl px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex flex-col items-center sm:items-start gap-1">
             <img
-              src="/nextday-logo3.png" // change extension if needed
+              src="/nextday-logo3.png"
               alt="Next Day House Offer"
-              className="h-16 w-auto md:h-20"
+              className="h-32 w-auto md:h-32"
             />
             <span className="text-sm tracking-[0.18em] font-semibold uppercase text-slate-100">
-              We Buy Your House Fast
+              We Buy Hou$e$ Fa$t
             </span>
           </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div>
               <p className="text-amber-600 font-semibold uppercase tracking-wide">
-                We will buy your house fast, in any condition
+                We buy houses fast, in any condition
               </p>
               <h1 className="mt-2 text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
                 Sell your house fast for cash — no repairs, no fees, no hassle.
@@ -93,205 +93,265 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKIP THE STRESS */}
+      {/* SECTION: HOW DO I SELL MY HOUSE FAST? – 3 big step cards */}
       <section className="bg-white py-16">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold text-slate-900 mb-4">
-            Skip the Stress — Sell Your Home As-Is, Fast & Hassle-Free
-          </h1>
-          <p className="text-lg text-slate-700">
-            We buy houses as-is in any condition. No cleaning, no repairs, no agents, and no
-            commissions — just a straightforward cash offer and a closing date that fits your
-            schedule.
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-3">
+            How Do I Sell My House Fast?
+          </h2>
+          <p className="text-center text-slate-700 max-w-3xl mx-auto mb-10">
+            At Next Day House Offer, we buy houses for cash and connect you with a local home
+            buyer in your area. Our simple 3-step process makes it easy to sell your house fast
+            without repairs, showings, or agent commissions.
+          </p>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {/* Step 1 */}
+            <div className="rounded-2xl bg-white shadow-md border border-slate-100 overflow-hidden">
+              <div className="bg-[#f05a28] text-white text-center py-3 font-semibold uppercase tracking-wide">
+                Step 1
+              </div>
+              <div className="p-6 flex flex-col items-center text-center gap-4">
+                <div className="flex items-center justify-center h-20 w-20 rounded-2xl bg-sky-100 text-sky-600 text-4xl">
+                  📋
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">Fill Out the Form</h3>
+                <p className="text-sm text-slate-700">
+                  Tell us about your property and situation. It only takes a couple of minutes and
+                  there’s no obligation.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="rounded-2xl bg-white shadow-md border border-slate-100 overflow-hidden">
+              <div className="bg-[#f05a28] text-white text-center py-3 font-semibold uppercase tracking-wide">
+                Step 2
+              </div>
+              <div className="p-6 flex flex-col items-center text-center gap-4">
+                <div className="flex items-center justify-center h-20 w-20 rounded-2xl bg-emerald-100 text-emerald-600 text-4xl">
+                  📞
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">Receive Your Cash Offer</h3>
+                <p className="text-sm text-slate-700">
+                  A local home buyer reviews your property and sends a fair cash offer. No
+                  hassles, no pressure, and zero fees.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="rounded-2xl bg-white shadow-md border border-slate-100 overflow-hidden">
+              <div className="bg-[#f05a28] text-white text-center py-3 font-semibold uppercase tracking-wide">
+                Step 3
+              </div>
+              <div className="p-6 flex flex-col items-center text-center gap-4">
+                <div className="flex items-center justify-center h-20 w-20 rounded-2xl bg-amber-100 text-amber-500 text-4xl">
+                  💰
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">Get Paid</h3>
+                <p className="text-sm text-slate-700">
+                  Choose the closing date that works for you and get paid in cash. No cleaning, no
+                  repairs, no open houses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BLUE BAND: I Want To Sell My House Fast, But… */}
+      <section className="bg-[#1f609b] py-16 text-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            I Want To Sell My House Fast, But…
+          </h2>
+          <p className="max-w-3xl mx-auto text-center text-sm md:text-base mb-10 text-sky-100">
+            No matter what challenge you’re facing, we work with homeowners in tough situations
+            every day. Whether you’re behind on payments, have a problem property, or just want a
+            quicker, more certain sale — we can help.
+          </p>
+
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 text-center">
+            <div className="flex flex-col items-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-white/10 flex items-center justify-center text-3xl">
+                🏡
+              </div>
+              <h3 className="font-semibold text-white">Inherited House</h3>
+              <p className="text-sm text-sky-100">
+                Inherited a property you don’t want to keep or manage? We can buy it as-is and
+                help you move on.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-white/10 flex items-center justify-center text-3xl">
+                💔
+              </div>
+              <h3 className="font-semibold text-white">Divorce</h3>
+              <p className="text-sm text-sky-100">
+                Need a clean, fast sale as part of a separation or divorce? We’ll work on your
+                timeline.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-white/10 flex items-center justify-center text-3xl">
+                ⚠️
+              </div>
+              <h3 className="font-semibold text-white">Avoid Foreclosure</h3>
+              <p className="text-sm text-sky-100">
+                Behind on payments or at risk of foreclosure? A cash offer may help you protect
+                your equity.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-white/10 flex items-center justify-center text-3xl">
+                🛠️
+              </div>
+              <h3 className="font-semibold text-white">Damaged Property</h3>
+              <p className="text-sm text-sky-100">
+                Fire damage, water damage, foundation issues, or major repairs needed? We still
+                buy it.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-white/10 flex items-center justify-center text-3xl">
+                🔑
+              </div>
+              <h3 className="font-semibold text-white">Relocation</h3>
+              <p className="text-sm text-sky-100">
+                Moving for work or family and need to sell quickly? We make flexible cash offers.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-white/10 flex items-center justify-center text-3xl">
+                📉
+              </div>
+              <h3 className="font-semibold text-white">Bad Real Estate Experience</h3>
+              <p className="text-sm text-sky-100">
+                Tried listing with an agent and it didn’t work out? Skip the showings and get a
+                direct cash offer.
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-10 text-center text-sm md:text-base text-sky-100 max-w-3xl mx-auto">
+            We buy real estate of all types — single-family homes, townhomes, condos, duplexes,
+            and small multi-family properties. If you need to sell your house fast, we can make
+            you a free, no-obligation cash offer and set a closing date that works for you.
           </p>
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
-      <section className="py-16 bg-slate-50">
+      {/* BENEFITS: Sell My Home Fast – icon grid */}
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">
-            Why Do Homeowners Choose NextDayHouseOffer®?
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-10">
+            Sell My Home Fast
           </h2>
 
-          <p className="text-lg text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
-            We make selling your home simple and stress-free — no matter the situation or
-            property condition. Whether your house is move-in ready, outdated, or needs major
-            repairs, we provide a fast, fair cash offer so you can move on with peace of mind.
-          </p>
+          <div className="grid gap-10 md:grid-cols-2">
+            <div className="flex flex-col items-center text-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-emerald-100 flex items-center justify-center text-3xl text-emerald-600">
+                💵
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900">Fair Cash Offer</h3>
+              <p className="text-sm text-slate-700 max-w-xs">
+                Sell your house fast for a fair cash offer from a local buyer who understands your
+                market and neighborhood.
+              </p>
+            </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className="rounded-xl bg-white border border-slate-200 p-5">
-              <h3 className="font-semibold text-slate-900 mb-2">No repairs or cleaning</h3>
-              <p className="text-sm text-slate-700">
-                Sell your house as-is. Leave unwanted items behind — we handle the cleanout and
-                repairs after closing.
+            <div className="flex flex-col items-center text-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-sky-100 flex items-center justify-center text-3xl text-sky-600">
+                ⏱️
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900">Fast Closing</h3>
+              <p className="text-sm text-slate-700 max-w-xs">
+                Need to move quickly? We can often close in as little as a couple of weeks — or
+                later if you need more time.
               </p>
             </div>
-            <div className="rounded-xl bg-white border border-slate-200 p-5">
-              <h3 className="font-semibold text-slate-900 mb-2">Fast, reliable closing</h3>
-              <p className="text-sm text-slate-700">
-                Close in as little as three weeks, or take more time if you need it. We work
-                around your timeline.
+
+            <div className="flex flex-col items-center text-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-rose-100 flex items-center justify-center text-3xl text-rose-600">
+                🚫
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900">No Fees or Commissions</h3>
+              <p className="text-sm text-slate-700 max-w-xs">
+                There are no agent commissions, no hidden junk fees, and we typically cover the
+                standard closing costs.
               </p>
             </div>
-            <div className="rounded-xl bg-white border border-slate-200 p-5">
-              <h3 className="font-semibold text-slate-900 mb-2">No fees or commissions</h3>
-              <p className="text-sm text-slate-700">
-                There are no agent commissions and no hidden fees. What we offer is what you put
-                in your pocket at closing, minus any mortgages or liens.
+
+            <div className="flex flex-col items-center text-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-amber-100 flex items-center justify-center text-3xl text-amber-500">
+                🧰
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900">No Home Repairs</h3>
+              <p className="text-sm text-slate-700 max-w-xs">
+                Sell your home without fixing anything. We buy houses as-is and handle the
+                updates, repairs, and clean-out after closing.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-indigo-100 flex items-center justify-center text-3xl text-indigo-600">
+                📅
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900">Flexible Closing Time</h3>
+              <p className="text-sm text-slate-700 max-w-xs">
+                You set the schedule. Whether you need to close quickly or prefer a later date,
+                we work around your timeline.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center gap-3">
+              <div className="h-16 w-16 rounded-full bg-teal-100 flex items-center justify-center text-3xl text-teal-600">
+                ✅
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900">Simple Sale Process</h3>
+              <p className="text-sm text-slate-700 max-w-xs">
+                Our streamlined process removes the stress of listings, showings, and
+                negotiations so you can move on with confidence.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* SMALL SEO SECTION WITH KEYWORDS (keep this, good for search) */}
       <section className="bg-white py-12">
         <div className="mx-auto max-w-6xl px-6 space-y-4">
           <h2 className="text-2xl font-bold text-slate-900">
             Looking for the best way to sell your house fast?
           </h2>
           <p className="text-sm text-slate-700 leading-relaxed">
-            Homeowners search every day for phrases like{" "}
-            <strong>“sell my house fast”</strong>,{" "}
-            <strong>“sell your house fast for cash”</strong>,{" "}
-            <strong>“best house cash offers”</strong>,{" "}
-            <strong>“we buy houses for cash”</strong>,{" "}
-            <strong>“cash home buyers near me”</strong>, and{" "}
-            <strong>“sell my home as-is”</strong>. Next Day House Offer focuses on
-            helping sellers who need a quick, hassle-free sale. Whether you want to
-            avoid repairs, sell a rental property, stop a foreclosure, or simply get a
-            fast cash offer, our team works with homeowners who search for terms like{" "}
-            <strong>“sell my house quickly”</strong>,{" "}
-            <strong>“fast cash offer on my house”</strong>,{" "}
-            <strong>“investor who buys houses”</strong>,{" "}
-            <strong>“no-agent home sale”</strong>, and{" "}
-            <strong>“companies that buy houses for cash”</strong> in cities all across
-            the United States.
+            Homeowners search every day for phrases like{' '}
+            <strong>“sell my house fast”</strong>,{' '}
+            <strong>“sell your house fast for cash”</strong>,{' '}
+            <strong>“best house cash offers”</strong>,{' '}
+            <strong>“we buy houses for cash”</strong>,{' '}
+            <strong>“cash home buyers near me”</strong>, and{' '}
+            <strong>“sell my home as-is”</strong>. Next Day House Offer focuses on helping
+            sellers who need a quick, hassle-free sale. Whether you want to avoid repairs, sell a
+            rental property, stop a foreclosure, or simply get a fast cash offer, our team works
+            with homeowners who search for terms like{' '}
+            <strong>“sell my house quickly”</strong>,{' '}
+            <strong>“fast cash offer on my house”</strong>,{' '}
+            <strong>“investor who buys houses”</strong>,{' '}
+            <strong>“no-agent home sale”</strong>, and{' '}
+            <strong>“companies that buy houses for cash”</strong> in cities all across the United
+            States.
           </p>
         </div>
       </section>
 
-      {/* OUR STORY */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Story</h2>
-          <p className="text-slate-700 text-lg leading-relaxed">
-            NextDayHouseOffer® was created to make selling a home simple, fast, and
-            stress-free. We know that not every homeowner has the time, money, or desire to list
-            their house with an agent, make repairs, host showings, and wait months for the
-            right buyer.
-            <br />
-            <br />
-            Over the years, we’ve grown into a trusted network of cash home buyers across the
-            United States, helping thousands of homeowners sell their properties “as is.” Our
-            recognizable yellow signs and friendly local teams have become a symbol of
-            reliability and ease in real estate for sellers who want a better option.
-            <br />
-            <br />
-            Today, with buyers in markets nationwide, we continue to provide a judgment-free,
-            hassle-free way to sell your house quickly — with no repairs, cleaning, or waiting
-            required.
-          </p>
-        </div>
-      </section>
-
-      {/* WHY WE DO IT */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Why We Do What We Do</h2>
-          <p className="text-slate-700 text-lg leading-relaxed">
-            Selling a home doesn’t have to be overwhelming. Our mission is to give homeowners a
-            simpler, faster alternative to the traditional real estate process. We help people
-            facing all kinds of situations — relocation, inheritance, divorce, job changes,
-            downsizing, tired landlords with rental properties, and more — by providing
-            transparent, all-cash offers and flexible closings.
-            <br />
-            <br />
-            No matter why you’re looking to sell, we’re here to help you move forward on your
-            terms with a clear, straightforward solution.
-          </p>
-        </div>
-      </section>
-
-      {/* HOW WE DO IT DIFFERENTLY */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">How We Do It Differently</h2>
-
-          <ul className="space-y-3 text-lg text-slate-700 leading-relaxed">
-            <li>• We buy houses in any condition — cluttered, damaged, outdated, or vacant.</li>
-            <li>• We handle unwanted items after the sale, so you don’t have to clean or haul.</li>
-            <li>• No cleaning, staging, showings, or open houses are required.</li>
-            <li>• We walk you through each step so the process feels clear and comfortable.</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold mt-8 mb-4 text-slate-900">Our Simple Process</h3>
-          <ol className="space-y-3 text-lg text-slate-700 leading-relaxed">
-            <li>1. Schedule a visit or virtual walk-through at your convenience.</li>
-            <li>2. We assess your home and listen to your situation and timeline.</li>
-            <li>3. You receive a fair, no-obligation cash offer.</li>
-            <li>4. Take your time to review the offer and ask questions.</li>
-            <li>5. If you accept, we close on the date that works best for you.</li>
-          </ol>
-        </div>
-      </section>
-
-      {/* WHO WE ARE */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Who Is NextDayHouseOffer®?</h2>
-          <p className="text-slate-700 text-lg leading-relaxed">
-            NextDayHouseOffer® is a nationwide home-buying company with local property buyers in
-            markets across the United States. Our teams understand the neighborhoods, price
-            ranges, and challenges that local homeowners face, and we bring that knowledge into
-            every offer we make.
-            <br />
-            <br />
-            We purchase houses “as is” directly from homeowners, so you can skip the MLS, skip
-            the repairs, and skip the months of uncertainty that come with listing traditionally.
-          </p>
-        </div>
-      </section>
-
-      {/* WHAT HOUSES WE BUY */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            What Kind of Houses Do We Buy?
-          </h2>
-          <p className="text-slate-700 text-lg leading-relaxed mb-4">
-            We buy single-family homes, townhomes, condos, small multi-family properties, and
-            rental houses “as is,” with any level of damage or needed repairs, including:
-          </p>
-          <ul className="list-disc pl-6 text-slate-700 text-lg space-y-2">
-            <li>Costly or unfinished repairs and older homes that need updating</li>
-            <li>Foundation or structural issues, roof problems, or major mechanical issues</li>
-            <li>Fire, water, or storm damage and properties affected by long-term neglect</li>
-            <li>Vacant homes, inherited properties, and rentals with problem tenants</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* 3-STEP PROCESS */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Simple 3-Step Process</h2>
-          <ol className="space-y-4 text-lg text-slate-700 leading-relaxed">
-            <li>
-              <strong>1. Free Consultation:</strong> Tell us about your house and your situation.
-            </li>
-            <li>
-              <strong>2. Fast Cash Offer:</strong> We’ll present a clear, no-obligation cash offer
-              based on your home’s condition and local market.
-            </li>
-            <li>
-              <strong>3. Easy Closing:</strong> You choose the closing date. We handle the
-              paperwork and typical closing costs.
-            </li>
-          </ol>
-        </div>
-      </section>
+      {/* ---- from here down, keep your existing SEO cities, states, form, FAQ, footer ---- */}
 
       {/* STATES WE SERVE */}
       <section className="py-16 bg-white">
@@ -331,9 +391,7 @@ export default function Home() {
             <div>Nebraska</div>
             <div>Nevada</div>
             <div>New Hampshire</div>
-
             <div>New Mexico</div>
-
             <div>North Carolina</div>
             <div>North Dakota</div>
             <div>Ohio</div>
@@ -368,6 +426,7 @@ export default function Home() {
             good chance the answer is yes.
           </p>
 
+          {/* (keeping your long SEO paragraphs exactly as before) */}
           <p className="text-sm text-slate-700 leading-relaxed">
             <strong>Midwest house buyers:</strong> We buy houses in Columbus, Cleveland,
             Cincinnati, Dayton, Toledo, Akron, Youngstown, Springfield, Lima, Detroit, Grand
@@ -439,7 +498,6 @@ export default function Home() {
             <OfferForm />
           </div>
 
-          {/* Updated sidebar: national, not just Ohio / Texas */}
           <aside className="rounded-xl border border-slate-200 bg-slate-50 p-5">
             <h3 className="font-extrabold text-slate-900">Why homeowners nationwide sell to us</h3>
             <ul className="mt-3 list-disc pl-5 text-slate-700 text-sm space-y-1.5">
@@ -457,42 +515,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="bg-slate-50 py-12">
-  <div className="mx-auto max-w-6xl px-6">
-    <h2 className="text-2xl font-bold text-slate-900 mb-6">
-      Frequently Asked Questions About Selling Your House Fast
-    </h2>
-    <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
-      <div>
-        <h3 className="font-semibold">
-          How does your “sell my house fast for cash” process work?
-        </h3>
-        <p>
-          We review your property, make a fair cash offer, and if you accept we
-          close on your schedule with no repairs or agent commissions.
-        </p>
-      </div>
-      <div>
-        <h3 className="font-semibold">
-          Do you buy houses in any condition, even if I need to sell my house as-is?
-        </h3>
-        <p>
-          Yes. We make house cash offers on properties that are outdated, damaged,
-          inherited, or have problem tenants.
-        </p>
-      </div>
-      <div>
-        <h3 className="font-semibold">
-          Can I get a fast house cash offer if I’m behind on payments?
-        </h3>
-        <p>
-          Many sellers come to us when they’re behind on payments or facing
-          foreclosure. We work quickly to present options and a cash offer.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">
+            Frequently Asked Questions About Selling Your House Fast
+          </h2>
+          <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
+            <div>
+              <h3 className="font-semibold">
+                How does your “sell my house fast for cash” process work?
+              </h3>
+              <p>
+                We review your property, make a fair cash offer, and if you accept we close on
+                your schedule with no repairs or agent commissions.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold">
+                Do you buy houses in any condition, even if I need to sell my house as-is?
+              </h3>
+              <p>
+                Yes. We make house cash offers on properties that are outdated, damaged,
+                inherited, or have problem tenants.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold">
+                Can I get a fast house cash offer if I’m behind on payments?
+              </h3>
+              <p>
+                Many sellers come to us when they’re behind on payments or facing foreclosure.
+                We work quickly to present options and a cash offer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* FOOTER */}
       <footer className="bg-slate-900 text-white">
