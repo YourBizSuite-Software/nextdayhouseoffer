@@ -106,7 +106,7 @@ export const metadata = {
       "Sell your house fast for cash in 45 U.S. states. No repairs, no commissions, no stress. Get a next-day cash offer.",
     url: "https://nextdayhouseoffer.net",
     siteName: "Next Day House Offer",
-    images: [{ url: "/next-logo3.png", width: 1200, height: 630, alt: "Next Day House Offer" }],
+    images: [{ url: "/next-logo3.png", alt: "Next Day House Offer" }],
     locale: "en_US",
     type: "website",
   },
