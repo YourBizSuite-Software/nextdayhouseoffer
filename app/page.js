@@ -31,10 +31,14 @@ export default function Home() {
 
   return (
     <>
-      <Script id="jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Script
+        id="jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* TOP BAR */}
-      <header className="bg-white shadow-sm">
+      <header className="bg-white border-b border-teal-100">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/next-logo.png" alt="Next Day House Offer" className="h-20 w-auto" />
@@ -42,7 +46,7 @@ export default function Home() {
           </div>
           <a
             href="tel:8886463983"
-            className="inline-flex items-center gap-2 rounded-full bg-red-600 px-4 py-2 text-white font-semibold shadow hover:bg-red-700"
+            className="inline-flex items-center gap-2 rounded-full bg-rose-600 px-4 py-2 text-white font-semibold shadow shadow-rose-200/70 hover:bg-rose-700 transition"
             aria-label="Call 888-646-3983"
           >
             <span>Call</span>
@@ -52,24 +56,27 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="bg-gradient-to-b from-slate-50 to-white">
+      <section className="bg-gradient-to-b from-teal-50 via-white to-rose-50">
         <div className="mx-auto max-w-6xl px-4 py-8">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div>
-              <p className="text-teal-700 font-semibold uppercase tracking-wide">We will buy your house fast, at any condition!</p>
+              <p className="text-teal-700 font-semibold uppercase tracking-wide">
+                We will buy your house fast, at any condition!
+              </p>
               <h1 className="mt-2 text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
                 We buy houses quick, no repairs, best offers.
               </h1>
               <p className="mt-3 text-slate-700">
-                Get a fair cash offer in <strong>24 hours</strong>. No repairs, no showings, and you pick the closing date.
+                Get a fair cash offer in <strong>24 hours</strong>. No repairs, no showings, and you
+                pick the closing date.
               </p>
 
-              {/* Address card (CTA) – now a client component */}
+              {/* Address card (CTA) – client component */}
               <HeroAddressCard />
             </div>
 
             {/* Video / visual */}
-            <div className="rounded-2xl overflow-hidden shadow">
+            <div className="rounded-2xl overflow-hidden shadow-lg shadow-teal-100">
               <video
                 src="/NextDayHouseOffer.mp4"
                 controls
@@ -84,79 +91,82 @@ export default function Home() {
         </div>
       </section>
 
-
-
-      <section class="bg-white py-16">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-          <h1 class="text-4xl font-bold text-gray-900 mb-4">
+      {/* SKIP THE STRESS */}
+      <section className="bg-white py-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h1 className="text-4xl font-bold text-teal-900 mb-4">
             Skip the Stress — Sell Your Home As-Is, Fast & Hassle-Free
           </h1>
-          <p class="text-lg text-gray-600">
+          <p className="text-lg text-slate-700">
             We pay cash for homes in any condition — no repairs, no cleaning, no waiting.
           </p>
         </div>
       </section>
 
-
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 text-center mb-10">
+      {/* WHY CHOOSE US */}
+      <section className="py-16 bg-teal-50/70">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-teal-900 text-center mb-10">
             Why Do Homeowners Choose NextDayHouseOffer®?
           </h2>
 
-          <p class="text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+          <p className="text-lg text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
             We make selling your home simple and stress-free — no matter the condition.
-            Whether your property is brand new or needs major repairs, we’ll make you a
-            fair, fast all-cash offer that fits your needs.
+            Whether your property is brand new or needs major repairs, we’ll make you a fair,
+            fast all-cash offer that fits your needs.
           </p>
         </div>
       </section>
 
-
-      <section class="py-16">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-          <p class="text-gray-700 text-lg leading-relaxed">
+      {/* OUR STORY */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-rose-700 mb-6">Our Story</h2>
+          <p className="text-slate-700 text-lg leading-relaxed">
             NextDayHouseOffer® was created to make selling a home simple, fast, and stress-free.
-            We understand that every homeowner’s situation is unique, and sometimes the traditional
-            selling process isn’t the right fit.
-            <br /><br />
+            We understand that every homeowner’s situation is unique, and sometimes the
+            traditional selling process isn’t the right fit.
+            <br />
+            <br />
             We’ve grown into a trusted network of cash home buyers across the United States,
-            helping thousands of homeowners sell their properties “as is.” Our recognizable yellow
-            signs and helpful team have become a symbol of reliability and ease in real estate.
-            <br /><br />
-            Today, with hundreds of franchises nationwide, we continue to provide a judgment-free,
-            hassle-free way to sell your home — no repairs, cleaning, or waiting required.
+            helping thousands of homeowners sell their properties “as is.” Our recognizable
+            yellow signs and helpful team have become a symbol of reliability and ease in real
+            estate.
+            <br />
+            <br />
+            Today, with hundreds of franchises nationwide, we continue to provide a
+            judgment-free, hassle-free way to sell your home — no repairs, cleaning, or waiting
+            required.
           </p>
         </div>
       </section>
 
-
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">Why We Do What We Do</h2>
-          <p class="text-gray-700 text-lg leading-relaxed">
+      {/* WHY WE DO IT */}
+      <section className="py-16 bg-rose-50/70">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-rose-700 mb-6">Why We Do What We Do</h2>
+          <p className="text-slate-700 text-lg leading-relaxed">
             Selling a home doesn’t have to be stressful. Our mission is simple: offer homeowners
-            relief and flexibility through direct, all-cash offers. No matter your situation, we give
-            you the freedom to move forward on your terms.
+            relief and flexibility through direct, all-cash offers. No matter your situation, we
+            give you the freedom to move forward on your terms.
           </p>
         </div>
       </section>
 
+      {/* HOW WE DO IT DIFFERENTLY */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-teal-900 mb-6">How We Do It Differently</h2>
 
-      <section class="py-16">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">How We Do It Differently</h2>
-
-          <ul class="space-y-3 text-lg text-gray-700 leading-relaxed">
+          <ul className="space-y-3 text-lg text-slate-700 leading-relaxed">
             <li>• We buy houses in any condition — cluttered, damaged, or outdated.</li>
             <li>• We handle unwanted items after the sale.</li>
             <li>• No cleaning, repairs, or staging required.</li>
             <li>• We work face-to-face with homeowners for clarity and comfort.</li>
           </ul>
 
-          <h3 class="text-2xl font-semibold mt-8 mb-4">Our Process</h3>
-          <ol class="space-y-3 text-lg text-gray-700 leading-relaxed">
+          <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Our Process</h3>
+          <ol className="space-y-3 text-lg text-slate-700 leading-relaxed">
             <li>1. Schedule a visit at your convenience.</li>
             <li>2. We assess your home and discuss your situation.</li>
             <li>3. Receive a fair, no-obligation cash offer.</li>
@@ -166,28 +176,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">Who Is NextDayHouseOffer®?</h2>
-          <p class="text-gray-700 text-lg leading-relaxed">
+      {/* WHO WE ARE */}
+      <section className="py-16 bg-teal-50/70">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-teal-900 mb-6">Who Is NextDayHouseOffer®?</h2>
+          <p className="text-slate-700 text-lg leading-relaxed">
             We’re not your typical home-buying company. With decades of real estate experience,
             our nationwide network of independently owned franchises helps homeowners sell their
             homes quickly and confidently.
-            <br /><br />
+            <br />
+            <br />
             We purchase houses “as is,” freeing you from the time, cost, and uncertainty of the
             traditional selling process.
           </p>
         </div>
       </section>
 
-
-      <section class="py-16">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">What Kind of Houses Do We Buy?</h2>
-          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+      {/* WHAT HOUSES WE BUY */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-rose-700 mb-6">What Kind of Houses Do We Buy?</h2>
+          <p className="text-slate-700 text-lg leading-relaxed mb-4">
             We buy houses “as is,” with any level of damage or needed repairs, including:
           </p>
-          <ul class="list-disc pl-6 text-gray-700 text-lg space-y-2">
+          <ul className="list-disc pl-6 text-slate-700 text-lg space-y-2">
             <li>Costly or unfinished repairs</li>
             <li>Foundation or structural issues</li>
             <li>Fire, water, or storm damage</li>
@@ -196,60 +208,174 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Simple 3-Step Process</h2>
-          <ol class="space-y-4 text-lg text-gray-700 leading-relaxed">
-            <li><strong>1. Free Consultation:</strong> Quick in-person home evaluation.</li>
-            <li><strong>2. Fast Cash Offer:</strong> Fair, no-obligation offer on the spot.</li>
-            <li><strong>3. Easy Closing:</strong> Close in as little as three weeks.</li>
+      {/* 3-STEP PROCESS */}
+      <section className="py-16 bg-gradient-to-r from-teal-50 via-white to-rose-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-teal-900 mb-6">Our Simple 3-Step Process</h2>
+          <ol className="space-y-4 text-lg text-slate-700 leading-relaxed">
+            <li>
+              <strong className="text-rose-700">1. Free Consultation:</strong> Quick in-person home
+              evaluation.
+            </li>
+            <li>
+              <strong className="text-rose-700">2. Fast Cash Offer:</strong> Fair, no-obligation
+              offer on the spot.
+            </li>
+            <li>
+              <strong className="text-rose-700">3. Easy Closing:</strong> Close in as little as
+              three weeks.
+            </li>
           </ol>
         </div>
       </section>
 
-
-      <section class="py-16">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+      {/* STATES WE SERVE */}
+      <section className="py-16 bg-gradient-to-br from-teal-50 via-white to-rose-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-teal-900 mb-6 text-center">
             We Buy Homes Across the United States
           </h2>
-          <p class="text-center text-gray-700 mb-6">
+          <p className="text-center text-slate-700 mb-6">
             We serve every U.S. state except Alaska, California, and Hawaii.
           </p>
 
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-gray-700 text-lg">
-            <div>Alabama</div><div>Arizona</div><div>Arkansas</div><div>Colorado</div>
-            <div>Connecticut</div><div>Delaware</div><div>Florida</div><div>Georgia</div>
-            <div>Idaho</div><div>Illinois</div><div>Indiana</div><div>Iowa</div>
-            <div>Kansas</div><div>Kentucky</div><div>Louisiana</div><div>Maine</div>
-            <div>Maryland</div><div>Massachusetts</div><div>Michigan</div><div>Minnesota</div>
-            <div>Mississippi</div><div>Missouri</div><div>Montana</div><div>Nebraska</div>
-            <div>Nevada</div><div>New Hampshire</div><div>New Jersey</div><div>New Mexico</div>
-            <div>New York</div><div>North Carolina</div><div>North Dakota</div><div>Ohio</div>
-            <div>Oklahoma</div><div>Oregon</div><div>Pennsylvania</div><div>Rhode Island</div>
-            <div>South Carolina</div><div>South Dakota</div><div>Tennessee</div><div>Texas</div>
-            <div>Utah</div><div>Vermont</div><div>Virginia</div><div>Washington</div>
-            <div>West Virginia</div><div>Wisconsin</div><div>Wyoming</div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-slate-700 text-lg">
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Alabama
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Arizona
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Arkansas
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Colorado
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Connecticut
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Delaware
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Florida</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Georgia</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Idaho</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Illinois</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Indiana</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Iowa</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Kansas</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Kentucky</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Louisiana
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Maine</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Maryland
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Massachusetts
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Michigan
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Minnesota
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Mississippi
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Missouri
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Montana
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Nebraska
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Nevada</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              New Hampshire
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              New Jersey
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              New Mexico
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">New York</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              North Carolina
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              North Dakota
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Ohio</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Oklahoma
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Oregon</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Pennsylvania
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Rhode Island
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              South Carolina
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              South Dakota
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Tennessee
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Texas</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">Utah</div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Vermont
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Virginia
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Washington
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              West Virginia
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Wisconsin
+            </div>
+            <div className="rounded-lg border border-teal-100 bg-white/60 px-3 py-2">
+              Wyoming
+            </div>
           </div>
         </div>
       </section>
-
 
       {/* FORM + SIDEBAR */}
       <section id="offer-form" className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12 grid gap-8 md:grid-cols-2">
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900">Get Your Free Cash Offer</h2>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-teal-900">
+              Get Your Free Cash Offer
+            </h2>
             <p className="mt-2 text-slate-600">
-              Fill out this quick form and we’ll send a fair offer as soon as <strong>next day</strong>. No obligation.
+              Fill out this quick form and we’ll send a fair offer as soon as{' '}
+              <strong>next day</strong>. No obligation.
             </p>
             <OfferForm />
           </div>
-          <aside className="rounded-xl border border-slate-200 bg-slate-50 p-5">
-            <h3 className="font-extrabold text-slate-900">Where we buy</h3>
-            <p className="mt-1 text-slate-700">Ohio: Columbus, Cleveland, Cincinnati, Dayton, Toledo & more.</p>
-            <p className="mt-1 text-slate-700">Texas: Houston, Dallas, Austin, San Antonio & surrounding areas.</p>
+          <aside className="rounded-xl border border-teal-100 bg-teal-50/70 p-5">
+            <h3 className="font-extrabold text-teal-900">Where we buy</h3>
+            <p className="mt-1 text-slate-700">
+              Ohio: Columbus, Cleveland, Cincinnati, Dayton, Toledo &amp; more.
+            </p>
+            <p className="mt-1 text-slate-700">
+              Texas: Houston, Dallas, Austin, San Antonio &amp; surrounding areas.
+            </p>
             <ul className="mt-4 list-disc pl-5 text-slate-700">
               <li>No repairs</li>
               <li>No commissions</li>
@@ -260,10 +386,12 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-teal-800 text-white">
-        <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex items-center justify-between">
+      <footer className="bg-gradient-to-r from-teal-800 to-rose-700 text-white">
+        <div className="mx-auto max-w-6xl px-4 py-6 text-sm flex flex-col sm:flex-row items-center justify-between gap-2">
           <div>© {year} Next Day House Offer</div>
-          <a className="underline" href="tel:8886463983">888-646-3983</a>
+          <a className="underline decoration-white/70 hover:decoration-white" href="tel:8886463983">
+            888-646-3983
+          </a>
         </div>
       </footer>
     </>
