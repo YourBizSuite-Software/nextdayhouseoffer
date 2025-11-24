@@ -84,86 +84,157 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3-STEP PROCESS */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900">Our 3-step selling process</h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-3">
-            <div className="rounded-xl border border-slate-200 bg-white p-6">
-              <div className="text-3xl font-black text-teal-700">1.</div>
-              <h3 className="mt-1 font-semibold text-slate-900">Free Consultation</h3>
-              <p className="mt-1 text-slate-600">
-                Fill the form with your <strong>property address</strong> and contact info. We’ll reach out ASAP to confirm details.
-              </p>
-            </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-6">
-              <div className="text-3xl font-black text-teal-700">2.</div>
-              <h3 className="mt-1 font-semibold text-slate-900">Fast Offer</h3>
-              <p className="mt-1 text-slate-600">
-                We’ll do a quick visit, review the property condition, and send a fair cash offer—often by the <em>next day</em>.
-              </p>
-            </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-6">
-              <div className="text-3xl font-black text-teal-700">3.</div>
-              <h3 className="mt-1 font-semibold text-slate-900">Easy Closing</h3>
-              <p className="mt-1 text-slate-600">Choose your closing date. <strong>No fees</strong>, we cover typical closing costs.</p>
-            </div>
-          </div>
+
+
+      <section class="bg-white py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">
+            Skip the Stress — Sell Your Home As-Is, Fast & Hassle-Free
+          </h1>
+          <p class="text-lg text-gray-600">
+            We pay cash for homes in any condition — no repairs, no cleaning, no waiting.
+          </p>
         </div>
       </section>
 
-      {/* VALUE PROPS */}
-      <section className="bg-teal-700">
-        <div className="mx-auto max-w-6xl px-4 py-10 text-white">
-          <h2 className="text-2xl md:text-3xl font-extrabold">Why sell to us?</h2>
-          <ul className="mt-4 grid gap-3 md:grid-cols-2">
-            <li className="rounded-lg bg-white/10 p-3">No repairs needed</li>
-            <li className="rounded-lg bg-white/10 p-3">No showings or open houses</li>
-            <li className="rounded-lg bg-white/10 p-3">We pay typical closing costs</li>
-            <li className="rounded-lg bg-white/10 p-3">Cash offers — no banks</li>
+
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-10">
+            Why Do Homeowners Choose NextDayHouseOffer®?
+          </h2>
+
+          <p class="text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+            We make selling your home simple and stress-free — no matter the condition.
+            Whether your property is brand new or needs major repairs, we’ll make you a
+            fair, fast all-cash offer that fits your needs.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+          <p class="text-gray-700 text-lg leading-relaxed">
+            NextDayHouseOffer® was created to make selling a home simple, fast, and stress-free.
+            We understand that every homeowner’s situation is unique, and sometimes the traditional
+            selling process isn’t the right fit.
+            <br /><br />
+            We’ve grown into a trusted network of cash home buyers across the United States,
+            helping thousands of homeowners sell their properties “as is.” Our recognizable yellow
+            signs and helpful team have become a symbol of reliability and ease in real estate.
+            <br /><br />
+            Today, with hundreds of franchises nationwide, we continue to provide a judgment-free,
+            hassle-free way to sell your home — no repairs, cleaning, or waiting required.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Why We Do What We Do</h2>
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Selling a home doesn’t have to be stressful. Our mission is simple: offer homeowners
+            relief and flexibility through direct, all-cash offers. No matter your situation, we give
+            you the freedom to move forward on your terms.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">How We Do It Differently</h2>
+
+          <ul class="space-y-3 text-lg text-gray-700 leading-relaxed">
+            <li>• We buy houses in any condition — cluttered, damaged, or outdated.</li>
+            <li>• We handle unwanted items after the sale.</li>
+            <li>• No cleaning, repairs, or staging required.</li>
+            <li>• We work face-to-face with homeowners for clarity and comfort.</li>
           </ul>
-          <a href="#offer-form" className="mt-6 inline-block rounded-lg bg-yellow-400 px-6 py-3 font-extrabold text-slate-900 shadow hover:bg-yellow-300">
-            GET OFFER NOW
-          </a>
+
+          <h3 class="text-2xl font-semibold mt-8 mb-4">Our Process</h3>
+          <ol class="space-y-3 text-lg text-gray-700 leading-relaxed">
+            <li>1. Schedule a visit at your convenience.</li>
+            <li>2. We assess your home and discuss your situation.</li>
+            <li>3. Receive a fair, no-obligation cash offer.</li>
+            <li>4. Take your time to review and decide.</li>
+            <li>5. Close quickly — often in as little as three weeks.</li>
+          </ol>
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-          <h2 className="text-2xl font-extrabold text-slate-900">Recent Purchases</h2>
-          <div className="mt-4 grid gap-4 md:grid-cols-3">
-            <img className="h-56 w-full rounded-lg object-cover" src="/recent1.JPG" alt="Recently purchased property 1" />
-            <img className="h-56 w-full rounded-lg object-cover" src="/recent2.JPG" alt="Recently purchased property 2" />
-            <img className="h-56 w-full rounded-lg object-cover" src="/recent3.JPG" alt="Recently purchased property 3" />
-            <img className="h-56 w-full rounded-lg object-cover md:col-span-3" src="/recent4.JPG" alt="Recently purchased property 4" />
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Who Is NextDayHouseOffer®?</h2>
+          <p class="text-gray-700 text-lg leading-relaxed">
+            We’re not your typical home-buying company. With decades of real estate experience,
+            our nationwide network of independently owned franchises helps homeowners sell their
+            homes quickly and confidently.
+            <br /><br />
+            We purchase houses “as is,” freeing you from the time, cost, and uncertainty of the
+            traditional selling process.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">What Kind of Houses Do We Buy?</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            We buy houses “as is,” with any level of damage or needed repairs, including:
+          </p>
+          <ul class="list-disc pl-6 text-gray-700 text-lg space-y-2">
+            <li>Costly or unfinished repairs</li>
+            <li>Foundation or structural issues</li>
+            <li>Fire, water, or storm damage</li>
+            <li>General wear and tear or neglect</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Simple 3-Step Process</h2>
+          <ol class="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <li><strong>1. Free Consultation:</strong> Quick in-person home evaluation.</li>
+            <li><strong>2. Fast Cash Offer:</strong> Fair, no-obligation offer on the spot.</li>
+            <li><strong>3. Easy Closing:</strong> Close in as little as three weeks.</li>
+          </ol>
+        </div>
+      </section>
+
+
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+            We Buy Homes Across the United States
+          </h2>
+          <p class="text-center text-gray-700 mb-6">
+            We serve every U.S. state except Alaska, California, and Hawaii.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-gray-700 text-lg">
+            <div>Alabama</div><div>Arizona</div><div>Arkansas</div><div>Colorado</div>
+            <div>Connecticut</div><div>Delaware</div><div>Florida</div><div>Georgia</div>
+            <div>Idaho</div><div>Illinois</div><div>Indiana</div><div>Iowa</div>
+            <div>Kansas</div><div>Kentucky</div><div>Louisiana</div><div>Maine</div>
+            <div>Maryland</div><div>Massachusetts</div><div>Michigan</div><div>Minnesota</div>
+            <div>Mississippi</div><div>Missouri</div><div>Montana</div><div>Nebraska</div>
+            <div>Nevada</div><div>New Hampshire</div><div>New Jersey</div><div>New Mexico</div>
+            <div>New York</div><div>North Carolina</div><div>North Dakota</div><div>Ohio</div>
+            <div>Oklahoma</div><div>Oregon</div><div>Pennsylvania</div><div>Rhode Island</div>
+            <div>South Carolina</div><div>South Dakota</div><div>Tennessee</div><div>Texas</div>
+            <div>Utah</div><div>Vermont</div><div>Virginia</div><div>Washington</div>
+            <div>West Virginia</div><div>Wisconsin</div><div>Wyoming</div>
           </div>
         </div>
       </section>
 
-      {/* REVIEWS */}
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-          <h2 className="text-2xl font-extrabold text-slate-900">Verified Seller Testimonials</h2>
-          <div className="mt-4 grid gap-4 md:grid-cols-3">
-            <div className="rounded-xl bg-white p-5 border border-slate-200">
-              <p className="text-yellow-400" aria-label="5 stars">★★★★★</p>
-              <p className="mt-2 text-slate-700">“Got a fair offer the next day and closed in under two weeks. Super easy.”</p>
-              <p className="mt-3 text-sm text-slate-500">— Michelle R., Columbus, OH</p>
-            </div>
-            <div className="rounded-xl bg-white p-5 border border-slate-200">
-              <p className="text-yellow-400" aria-label="5 stars">★★★★★</p>
-              <p className="mt-2 text-slate-700">“Sold as-is with tenants in place. Communication was great throughout.”</p>
-              <p className="mt-3 text-sm text-slate-500">— Carlos M., Houston, TX</p>
-            </div>
-            <div className="rounded-xl bg-white p-5 border border-slate-200">
-              <p className="text-yellow-400" aria-label="5 stars">★★★★★</p>
-              <p className="mt-2 text-slate-700">“No fees and they covered closing costs. Highly recommend.”</p>
-              <p className="mt-3 text-sm text-slate-500">— Emily T., Dayton, OH</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FORM + SIDEBAR */}
       <section id="offer-form" className="bg-white">
