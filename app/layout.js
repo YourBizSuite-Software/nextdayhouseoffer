@@ -25,7 +25,7 @@ export const metadata = {
     "sell home in any condition",
     "close on your timeline",
 
-    // These are fine — generic descriptive phrases
+    // Generic descriptive phrases
     "we buy ugly houses",
     "we buy houses any condition",
     "we buy damaged houses",
@@ -44,7 +44,7 @@ export const metadata = {
     "home investors that buy houses",
     "cash investors buying homes",
 
-    // GEO national (excluding CA, NY, NJ, AK, HI)
+    // GEO targeting nationwide
     "sell my house fast Texas",
     "sell my house fast Florida",
     "sell my house fast Ohio",
@@ -88,11 +88,12 @@ export const metadata = {
     "sell my house fast Delaware",
     "sell my house fast Arizona",
 
-    // Misspelling + variations
+    // Misspelling
     "homebrokrage",
   ],
   authors: [{ name: "Next Day House Offer", url: "https://nextdayhouseoffer.net" }],
   alternates: { canonical: "https://nextdayhouseoffer.net" },
+
   robots: {
     index: true,
     follow: true,
@@ -100,6 +101,7 @@ export const metadata = {
     "max-image-preview": "large",
     "max-video-preview": -1,
   },
+
   openGraph: {
     title: "Next Day House Offer | Sell Your House Fast for Cash",
     description:
@@ -110,6 +112,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Next Day House Offer | Sell Your House Fast for Cash",
@@ -117,6 +120,7 @@ export const metadata = {
       "We make fair cash offers within 24 hours — no repairs or commissions required.",
     images: ["/logo3.png"],
   },
+
   icons: {
     icon: "/logo3.png",
     apple: "/logo3.png",
@@ -127,10 +131,31 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-white text-slate-900">
+
+        {/* ⭐ Google Ads / GA4 Tracking Tag ⭐ */}
         <Script
-          src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places&v=weekly`}
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17755449518"
           strategy="afterInteractive"
         />
+        <Script id="google-ads-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17755449518');
+          `}
+        </Script>
+
+        {/* ⭐ Google Maps Places API ⭐ */}
+        <Script
+          src={
+            "https://maps.googleapis.com/maps/api/js?key=" +
+            process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY +
+            "&libraries=places&v=weekly"
+          }
+          strategy="afterInteractive"
+        />
+
         {children}
       </body>
     </html>
