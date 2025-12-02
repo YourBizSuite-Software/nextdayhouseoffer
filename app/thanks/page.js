@@ -1,4 +1,4 @@
-// app/thanks/page.js (or page.tsx)
+// app/thanks/page.js
 import Script from "next/script";
 
 export const metadata = { title: "Thanks — Request Received" };
@@ -6,16 +6,14 @@ export const metadata = { title: "Thanks — Request Received" };
 export default function Thanks() {
   return (
     <>
-      {/* 🔥 Google Ads conversion – Submit lead form (page load) 🔥 */}
+      {/* 🔥 Google Ads Conversion – Lead Form Submit */}
       <Script id="aw-submit-lead-conversion" strategy="afterInteractive">
         {`
-          if (window.gtag) {
-            window.gtag('event', 'conversion', {
-              'send_to': 'AW-17755449518/7E3nCLDs1MkbEk7RupJC',
-              'value': 1.0,
-              'currency': 'USD'
-            });
-          }
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17755449518/7E3nCLDs1MkbEK7RupJC',
+            'value': 1.0,
+            'currency': 'USD'
+          });
         `}
       </Script>
 
