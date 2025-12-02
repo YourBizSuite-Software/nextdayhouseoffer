@@ -131,13 +131,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-white text-slate-900">
-
-        {/* ⭐ Google Ads / GA4 Tracking Tag ⭐ */}
+        {/* ✅ Google tag (gtag.js) – converted to Next.js Script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17755449518"
           strategy="afterInteractive"
         />
-        <Script id="google-ads-init" strategy="afterInteractive">
+        <Script id="google-ads-gtag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
