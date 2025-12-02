@@ -95,18 +95,6 @@ export default function StatePageTemplate({ stateName, stateSlug, cities }) {
               <HeroAddressCard />
             </div>
 
-            {/* Video */}
-            <div className="rounded-2xl overflow-hidden shadow-lg shadow-slate-200">
-              <video
-                src="/NextDayHouseOffer.mp4"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/thumbnail.jpg"
-                className="w-full h-64 md:h-[360px] object-cover"
-                aria-label="How selling to us works"
-              />
-            </div>
           </div>
         </div>
       </section>
